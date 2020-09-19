@@ -1,0 +1,4 @@
+Para consulta:
+- https://www.w3schools.com/
+- https://developer.mozilla.org/es/docs/Web/HTML
+- https://developer.mozilla.org/es/docs/Web/CSS
