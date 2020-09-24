@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        ol.i {list-style-type: lower-roman;}
+        ol.a {list-style-type: lower-alpha;}
+        ul.b {list-style-type: disc;}
+        ul.c {list-style-type: square;}
+        
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica: Listas</title>
+</head>
+<body>
+    <h1>Práctica: Listas</h1>
+
+    <h2>Aircarft Types</h2>
+
+    <ol class="i"> <!-- O poner en vez de class, type="i"-->
+        <li>
+            General Aviation
+            <ol class="a"> <!-- O poner en vez de class, type="a" -->
+                <li>Single Aviation Aircarft</li>
+                <li>Dual-Engine Aircarft</li>
+            </ol>
+        </li>
+        <li>
+            Commercial Aviation
+            <ul class="b"> <!-- O poner style:"list-style-type:disc" -->
+                <li>Duan Engine</li>
+                <li>Tri-Engine</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Segunda lista</h2>
+    
+    <ul class="c"> <!-- O poner style:"list-style-type:square" -->
+        <li>
+            A
+            <ul class="b"> <!-- O poner style:"list-style-type:disc" -->
+                <li>
+                    B
+                    <ol>
+                        <li>C</li>
+                        <li>D</li>
+                    </ol>
+                </li>
+                <li>
+                    E
+                    <ul>
+                        <li>F</li>
+                        <li>G</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>B</li>
+    </ul>
+
+    
+
+    
+    
+    
+    
+</body>
+</html>
