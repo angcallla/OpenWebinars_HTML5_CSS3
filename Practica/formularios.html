@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        fieldset.a{
+            background-color: gray;
+        }
+
+        legend{
+            border: solid black 1px;
+            background-color: white;
+        }
+
+        fieldset.b{
+            background-color: orange;
+        }
+
+        fieldset.c{
+            background-color: red;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica: Formularios</title>
+</head>
+<body>
+    
+    <h1>HOJA DE INSCRIPCIÓN</h1>
+    <h1>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
+
+    <form action="" method="POST">
+        <fieldset class="a">
+            <legend>Datos personales</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="nombre">Nombre:</label> <br />
+                            <input type="text" name="nombre" />
+                        </td>
+                        <td>
+                            <label for="apellidos">Apellidos:</label> <br />
+                            <input type="text" name="apellidos" />
+                        </td>
+                        <td>
+                            <label for="dni">DNI:</label> <br />
+                            <input type="text" name="dni" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="localidad">Localidad Nacimiento:</label> <br />
+                            <input type="text" name="localidad" />
+                        </td>
+                        <td>
+                            <label for="provincia">Provincia:</label> <br />
+                            <select name="provincia">
+                                <option selected disabled>- selecciona -</option>
+                                <option value="sevilla">Sevilla</option>
+                                <option value="cordoba">Córdoba</option>
+                                <option value="malaga">Málaga</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="fecha_nacimiento">Fecha Nacimiento:</label> <br />
+                            <input type="date" name="fecha_nacimiento" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="direccion">Dirección:</label> <br />
+                            <input type="text" name="direccion" size=40/>
+                        </td>
+                        <td>
+                            <label for="codigo_postal">Código Postal:</label> <br />  
+                            <input type="numbrer" name="codigo_postal" />                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset class="b">
+            <legend>Forma de acceso</legend>
+            <ul style="list-style-type: none;">
+                <li>
+                    <input type="radio" name="primera" value="directo" />
+                    Directo
+                    <!-- Para que a esta lista solo se pudiera acceder con directo seleccionado, javascript -->
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <input type="radio" name="segunda" value="logse" />
+                            <label for="logse_modalidad">Bachillerato LOGSE. Modalidad</label>
+                            <input type="text" name="logse_modalidad" />
+                        </li>
+                        <li>
+                            <input type="radio" name="segunda" value="experimental" />
+                            Bachillerato Experimental
+                        </li>
+                        <li>
+                            <input type="radio" name="segunda" value="cou" />
+                            <label for="cou_opcion">COU. Opción</label>
+                            <input type="text" name="cou_opcion" />
+                        </li>
+                        <li>
+                            <input type="radio" name="segunda" value="fp2" />
+                            FP2
+                        </li>
+                        <li>
+                            <input type="radio" name="segunda" value="otros" />
+                            <label for="direct_otros">Otros (especifique)</label>
+                            <input type="text" name="direct_otros" />
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="radio" name="primera" value="prueba" />
+                    Prueba Libre
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset class="c">
+            <legend>Documentos adjuntados</legend>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="adjunto" />
+                        Fotocopia DNI
+                    </td>
+                    <td>
+                        <input type="checkbox" name="adjunto" />
+                        Certificado Académico
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="adjunto" />
+                        Otros documentos (especifique)
+                        <input type="text" size="35"/>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <p>
+            <button type="submit">Enviar solicitud</button>
+        </p>
+        
+    </form>
+
+    
+
+</body>
+</html>
