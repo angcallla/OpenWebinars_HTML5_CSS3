@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomurlarios: más inputs</title>
+</head>
+<body>
+    
+    <h1>Formularios: más tipos de inputs</h1>
+
+    <p>No todos los navegadores soportan todos los tipos de inputs.</p>
+
+    <p>
+        Cuando un input es de un tipo, el navegador es forzado a comprobar que el dato
+        que el usuario está introduciendo es de este tipo.
+    </p>
+
+    <p>Vamos a ver en esta página algunos ejemplos de los inputs más interesantes:</p>
+
+
+    <h3>Radio groups: para checkear opciones excluyentes (poner el mismo atributo name)</h3>
+    <form action="" method="POST">
+        <p>
+            <label for="genero">Sexo</label>
+            <input type="radio" name="genero" value="masculino"/> Hombre <br/>
+            <input type="radio" name="genero" value="femenino" checked/> Mujer <br/>
+        </p>
+    </form>
+
+    <h3>Checkboxes: para checkear cuantas opciones quiera</h3>
+    <form action="" method="POST">
+        <p>
+            <label for="dispositivos">Dispositivos</label>
+            <input type="checkbox" name="dispositivos" value="pc"/>PC <br/>
+            <input type="checkbox" name="dispositivos" value="table"/>Tableta <br/>
+            <input type="checkbox" name="dispositivos" value="movil"/>Móvil <br/>
+        </p>
+    </form>
+
+    <h3>Datalist: Me permite desplegar una lista para inputs</h3>
+    <form action="" method="POST">
+        <input list="editor"/>
+
+        <datalist id="editor">
+            <option value="Atom"/>
+            <option value="NotePad++"/>
+            <option value="VsCode"/>
+            <option value="Sublime"/>
+            <option value="Brackets"/>
+        </datalist>
+    </form>
+
+
+</body>
+</html>

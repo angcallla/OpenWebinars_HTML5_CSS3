@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+Etiquetas</title>
+</head>
+<body>
+    
+    <h1>+Etiquetas</h1>
+
+    <hr />
+
+    <h2>Multimedia</h2>
+
+    <h3>Estructura común tanto para audio/video</h3>
+    
+    <p>
+        <ul>
+            <li>
+                audio/video
+                <ul>
+                    <li>source (tipos de archivos, tantos como tipos queramos compartir de un mismo archivo)</li>
+                    <li>track (tantas como elementos adicionales queramos añadir: subtitulo, ...)</li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+
+    <h4>Atributos de "audio" y "video"</h4>
+
+    <ul>
+        <li>controls: para mostrar los botones play, foward, ...</li>
+        <li>autoplay: cuando cargues la pagina se activa solo</li>
+        <li>loop: se repite el audio o video</li>
+        <li>muted: mutea</li>
+    </ul>
+
+    <h4>Atributos exclusivos de "video"</h4>
+    <ul>
+        <li>width: ancho</li>
+        <li>height: alto</li>
+        <li>poster: poner una imagen mientras se está cargando el vídeo</li>
+    </ul>
+
+    <h4>Atributos de "source"</h4>
+    <ul>
+        <li>src: donde está el fichero</li>
+        <li>type: su tipo</li>
+    </ul>
+
+    <h4>Atributos de "track"</h4>
+    <ul>
+        <li>src</li>
+        <li>kind: tipo de archivo que estoy enlazando</li>
+        <li>srclang: donde definimos el lenguaje</li>
+        <li>label: descripción</li>
+        <li>type: tipo del archivo</li>
+    </ul>
+
+    <hr />
+
+    <h2>Semánticas</h2>
+
+    <p>Sirve para decir al navegador, buscador y desarrollador que tipo de contenido va en una sección</p>
+
+    <p>Algunas de estas etiquetas son:</p>
+
+    <ul>
+        <li>header: cabecera de mi página web</li>
+        <li>footer: pie de mi página web</li>
+        <li>main: donde está el grueso de mi información, la info principal</li>
+        <li>section: cada una de las secciones que yo pueda distinguir en main</li>
+        <li>article: zonas de la web que tienen sentido por si mismas (por ejemplo: artículo de periódico)</li>
+        <li>aside: nos da información adicional sobre la zona en la que estamos</li>
+        <li>details: para los detalles de una zona en concreto</li>
+        <li>dialog: para cuadros de diálogo</li>
+        <li>summary: para resumenes</li>
+        <li>nav: si tengo un menú de navegación</li>
+    </ul>
+
+    <h3>Características</h3>
+
+    <ul style="list-style-type: square;">
+        <li>Novedad de HTML5</li>
+        <li>Se comportan como las etiquetas div, es decir, no aportan contenido sino significado.
+            Esto quiere decir que si pones una etiqueta, por ejemplo header, por si sola no vas a ver nada
+        </li>
+        <li>Se utilizan para maquetar</li>
+        <li>Tiene reglas de anidación, todas distinas. Por ejemplo: No puedo tener más de una etiqueta main en mi página</li>
+    </ul>
+    
+    <hr />
+
+    <h2>Otras etiquetas</h2>
+
+    <p>Exiten infinidad de ellas, pero estas son algunas importantes que debes conocer:</p>
+
+    <ul>
+        <li>iframe: me permite meter una página web dentro de una página web</li>
+        <li>canvas: me permite dibujar un lienzo en página web y dibujar cualquier cosa en él. Necesario javascript</li>
+        <li>div: etiqueta que se usa por antonomasia para maquetar además de las Semánticas del apartado anterior</li>
+        <li>span: es una etiqueta en línea, me sirve para distinguir elementos en una linea de mi navegador</li>
+        <li>script: me permite enlazar ficheros normalmente escritos en javascript</li>
+        <li>object/embed: me permite ver ficheros como pdf y cualquier otro utilizando plugins de terceros</li>
+    </ul>
+
+
+</body>
+</html>

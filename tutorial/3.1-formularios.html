@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+
+    <h1>Formularios</h1>
+    
+    <!-- Etiqueta padre, "method" indica como quiero enviar los datos: GET (aparece en la url) 
+        o POST (no aparece, más privado); y "action" a donde va a dirigirse la info -->
+    <form method="POST" action="destination.html">
+
+        <p>
+            <!-- Etiqueta "label": comunmente sigue a un campo input. atrituto "for" se le añade algún nombre
+            que identifique -->
+            <label for="nombre">Nombre:</label>
+
+            <!-- Etiqueta "input": campo que el usuario va a rellenar. El atributo "type"
+            indica que tipo de input va a ser y el atributo "name" debe ser igual al atributo "for" de la etiqueta
+            "label" para que el navegador entienda que van asociados -->
+            <input type="text" name="nombre">  
+        </p>
+
+        <p>
+            <label for="provincia">Provincia</label>
+            <!-- Etiqueta "select": permite elegir entre diferentes posibilidades (por medio de etiquetas "option"). 
+                Con "multiple" indicamos que se puede escoger varias opciones -->
+            <select name="provincia" multiple>
+                <!-- etiqueta "option": el atributo "value" es para indicar el valor que se mandaría
+                a servidor si pulsamos en la opción asociada. Si no ponemos el atributo, el valor será
+                lo escrito entre las etiquetas "option" -->
+                <option value="Z">Zaragoza</option>
+                <option value="">Huesca</option>
+                <option value="">Teruel</option>
+            </select>
+        </p>
+
+        <p>
+            <!-- Etiqueta "textarea": Para poner un texto. "cols" tamaño de columnas y "rows" tamaño de filas-->
+            <textarea cols="10" rows="10">
+                Este es un texto de prueba para probar la etiqueta textarea
+            </textarea>
+        </p>
+
+        <p>
+            <!-- Etiqueta "button": Tiene 3 o más comportamientos dependiendo de lo que ponemos en el atributo "type".
+            - button: Se comporta como un botón que puede estar presionado
+            - reset: borra los datos que hayamos metido hasta ahora en el formulario.
+            - submit: envía los datos a la url que habíamos puesto en el action del form (por defecto). -->
+            <button type="reset">Reset</button>
+        </p>
+
+    </form>
+
+    <hr>
+
+    <h2>Agrupando atributos</h2>
+
+    <p>Si hay ciertos campos del formulario que pueden ser agrupados utilizo la etiqueta "fieldset".</p>
+
+    <p>Esta tiene la siguiente estructura:
+        <ul>
+            <li>"fieldset"</li>
+            <ul>
+                <li>"legend" para darle un título a la agrupación</li>
+                <li>"controles" donde pongo todo los inputs y etc. No se pone la etiqueta como tal</li>
+            </ul>
+            
+        </ul>
+    </p>
+
+    <h3>Ejemplo</h3>
+
+    <form method="POST" action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p></p>
+        
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre">
+            </p>
+               
+            <p>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" name="apellidos">
+            </p>
+               
+            <p>
+                <label for="provincia">Provincia</label>
+                <select name="provincia">
+                    <option value="">Zaragoza</option>
+                    <option value="">Madrid</option>
+                    <option value="">Sevilla</option>
+                </select>
+            </p>
+
+            <p>
+                <button type="button">Enviar</button>
+            </p>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <h2>Atributos interesantes</h2>
+
+    <ul>
+        <li>required: campo obligatorio en el form</li>
+        <li>disable: deshabilita el campo</li>
+        <li>readonly: solo lectura, no modificable</li>
+        <li>placeholder: agregar texto introductorio. Ejemplo: Insertar nombre..</li>
+        <li>value: para que tenga un valor en específico</li>
+        <li>tabindex: para que al darle al tabulador, siga un orden concreto</li>
+        <li>multiple: elegir varias opciones en el select</li>
+    </ul>
+
+    <h3>Ejemplos de cada uno de ellos</h3>
+
+    <form action="" method="POST">
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" required>
+        </p>
+        
+        <p>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" disabled>
+        </p>
+
+        <p>
+            <label for="telefono">Teléfono</label>
+            <input type="text" name="telefono" value="123456789">
+        </p>
+
+        <p>
+            <label for="email">Email:</label>
+            <input type="text" name="email" placeholder="aaaa@aaa.com">
+        </p>
+
+        <p>
+            <label for="edad" tabindex="0">Edad:</label>
+        </p>
+
+        <p>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+    
+</body>
+</html>

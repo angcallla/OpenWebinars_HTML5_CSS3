@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+Etiquetas: Accesibilidad</title>
+</head>
+<body>
+    
+    <h1>+Etiquetas: Accesibilidad</h1>
+
+    <p>En nuestro país, por ley, nuestas páginas deben cumplir ciertos requisitos de accesibilidad</p>
+
+    <p>
+        Contruir nuestra web teniendo presente que cualquier app o persona puede acceder a ella, incluso por
+        aquellos que presentan una discapacidad
+    </p>
+
+    <h2>Algunas reglas generales</h2>
+
+    <ul>
+        <li>utilizar etiquetas semánticas en vez de div, para que los dispositivos sepan lo que hay dentro</li>
+        <li>
+            usar el atributo "for" para los labels. Esto es la asociación que veniamos haciendo del atributo
+            "for" del label y el atributo "name" del input
+        </li>
+        <li>Añadir atributo "alt" en las imágenes</li>
+        <li>Especificar el idioma de la página</li>
+        <li>Utilizar las cabeceras correctamente (h1, h2, ...)</li>
+    </ul>
+
+    <h2>Atributos ARIA (Novedad en HTML5)</h2>
+
+    <p>
+        Los atributos ARIA (Accesible Rich Internet Application), son atributos que se añaden a las etiquetas
+        para que estas puedan ser mejor entendidas por las personas con alguna discapacidad.
+    </p>
+
+    <h3>Algunos de los atributos más importantes:</h3>
+
+    <ul>
+        <li>
+            role: para indicar el rol que posee mi etiqueta. Por ejemplo, si es una alerta (alert), si es un
+            documento (document), etc.
+        </li>
+        <li>
+            aria-owns: para expresar la jerarquía de una etiqueta
+        </li>
+        <li>
+            aria-hidden: para decir que ese campo está oculto
+        </li>
+        <li>
+            aria-live: para decir que es una zona de mi web que se va a ir actualizando constantemente
+        </li>
+        <li>
+            aria-check: que el control del formulario está seleccionado
+        </li>
+        <li>
+            aria-label: que es una etiqueta
+        </li>
+        <li>
+            aria-disabled: que es un campo que está desabilitado
+        </li>
+        <li>
+            aria-valuenow/max/min: para indicar en un campo de rango el valor actual, máximo o mínimo.
+        </li>
+    </ul>
+
+</body>
+</html>

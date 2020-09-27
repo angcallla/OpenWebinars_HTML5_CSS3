@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido: Tablas</title>
+</head>
+<body>
+    <h1>Tablas</h1>
+    <p>
+        Su estructura de etiquetas es la siguiente:
+        <ul>
+            <li>"table"
+                <ul>
+                    <li>
+                        "tr" que especifica una fila en la tabla
+                        <ul>
+                            <li>"td" para una columna en la fila en formato normal</li>
+                            <li>"th" para una columna en al fila en negrita y centrada</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+
+    <h3>Ejemplo</h3>
+
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Dirección</th>
+            <th>Teléfono</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Ángel</td>
+            <td>Calzado</td>
+            <td>Sevilla</td>
+            <td>123456789</td>
+            <td>yosoy@angel.es</td>
+        </tr>
+        <tr>
+            <td>Santi</td>
+            <td>Broge</td>
+            <td>Sevilla</td>
+            <td>987654321</td>
+            <td>yosoy@santi.es</td>
+        </tr>
+    </table>
+
+    <hr/>
+
+    <h2>Tabla completa</h2>
+    <ul>
+        <li>
+            "table"
+            <ul>
+                <li>
+                    "colgroup" me permite agrupar las columnas para aplicarles estilo
+                    <ul>
+                        <li>"col"</li>
+                    </ul>
+                </li>
+                <li>
+                    "caption" me permite poner un título a la tabla que aparecerá arriba
+                </li>
+                <li>
+                    "thead" define la fila que es cabecera de la tabla (nombre, apellidos, ...)
+                    <ul>
+                        <li>
+                            "tr"
+                            <ul>
+                                <li>"td"/"th"</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                .<br>
+                .<br>
+                .<br>
+                <li>
+                    "tbody" define el cuerpo de la tabla
+                    <ul>
+                        <li>
+                            "tr"
+                            <ul>
+                                <li>"td"/"th"</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    "tfoot" me define el pie de la tabla
+                    <ul>
+                        <li>
+                            "tr"
+                            <ul>
+                                <li>"td"/"th"</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Ejemplo</h3>
+
+    <table>
+        <colgroup>
+            <col span="3" style="background-color: grey;">
+            <col style="background-color: yellow;">
+            <col style="background-color: green;"> 
+        </colgroup>
+        <caption>Alumnos matriculados</caption>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ángel</td>
+                <td>Mármol</td>
+                <td>Remedios</td>
+                <td>234567231</td>
+                <td>ysam@g.es</td>
+            </tr>
+            <tr>
+                <td>Manel</td>
+                <td>Santos</td>
+                <td>Camas</td>
+                <td>666543123</td>
+                <td>cositas@g.es</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>La anchura de una columna es igual a la de la fila más ancha de esa columna</td>
+                <td>La altura de una fila es igual a la del extremo de fila más alto</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr/>
+
+    <h2>Tablas complejas (rowspan y colspan)</h2>
+
+    <p>
+        Atributos interesantes
+        <ul>
+            <li>rowspan: para que una celda (th/td) ocupe más de una fila</li>
+            <li>colspan: para que una celda (th/td) coupe más de una columna</li>
+            <li>Muchos atributos de formatos de tablas han sido desechados en HTML5
+                aunque algunos navegadores siguen dándoles soporte
+            </li>
+        </ul>
+    </p>
+
+    <h3>Ejemplo</h3>
+
+    <table>
+        <caption>Horario de clase curso 2019-2020</caption>
+        <thead>
+            <tr>
+                <th>HORAS</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:00</td>
+                <td rowspan="2">Matemáticas</td>
+                <td>Lengua</td>
+                <td>Inglés</td>
+                <td colspan="2">Ciencias</td>
+            </tr>
+            <tr>
+                <td>9:00</td>
+                <td>Historia</td>
+                <td>Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Lengua</td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <th colspan="5">RECREO</th>
+            </tr>
+            <tr>
+                <td>10:30</td>
+                <td>Inglés</td>
+                <td rowspan="2">Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Lengua</td>
+                <td>Historia</td>
+            </tr>
+            <tr>
+                <td>11:30</td>
+                <td>Historia</td>
+                <td>Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Inglés</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

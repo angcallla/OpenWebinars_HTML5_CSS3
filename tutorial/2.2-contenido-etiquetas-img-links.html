@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Imágenes -->
+    <h1>Imágenes</h1>
+    <!-- Si no especificamos algunos de los atributos width y height, pondrá las de la imagen en sí. -->
+    <!-- Tipos de ruta en imágenes:
+        -relativa: en relación al irectorio en el que se encuentra el fichero html
+        -absoluta: en relación al directorio raíz de nuestor disco duro (PELIGRO)
+        -url: una dirección de internet en la que se encuentra la imagen (PUEDE DESAPARECER) -->
+    
+    <h2>Normal funcionando</h2>
+    <img src="../Img/logo_google.png" alt="Logo de google" width="" height="" />
+
+    <h2>Sin ruta valida (se lee el atributo 'alt')</h2>
+    <img src="../Img/logo_gogle.png" alt="Logo de google" width="" height="" />
+
+    <h2>Modificando su tamaño en px</h2>
+    <img src="../Img/logo_google.png" alt="Logo de google" width="12px" height="12px" />
+
+    <h2>Modificando su tamaño en %</h2>
+    <img src="../Img/logo_google.png" alt="Logo de google" width="75%" height="" />
+
+    <hr/>
+
+    <!-- Figuras -->
+    <h1>Figuras</h1>
+
+    <!-- Las figuras las construimos mediante una serie de etiquetas:
+    - figure: Etiqueta padre
+        - img: la imagen
+        - figcaption: texto que asocio a la imagen 
+    
+    De esa manera creamos un paquete, de manera que imagen y texto están asociados-->
+
+    <figure>
+        <img src="../Img/logo_google.png" alt="Logo google">
+        <figcaption>Este es el nuevo doodle de google</figcaption>
+    </figure>
+
+    <hr/>
+    <!-- Enlaces -->
+    <h1> Enlaces </h1>
+
+    <!-- Con el atributo target indicamos si el enlace se va a abrir en una pestaña nueva -->
+    <p><a href="https://www.youtube.com/" target="">Enlace a youtube desde la misma pestaña</a></p>
+
+    <p><a href="https://www.youtube.com/" target="_blank">Enlace a youtube desde una pestaña nueva</a></p>
+
+    <h2>Enlace con imagen</h2>
+    <a href="https://www.youtube.com/" target="_blank">
+        <img src="../Img/logo_youtube.png" alt="Ir a youtube" width="25%" height="25%">
+    </a>
+
+    <br/>
+
+    <h2>Enlaces internos</h2>
+    <a href="#contacto"> 
+        Contacto
+    </a>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <section id="contacto">
+        <p>Texto al que se va directamente al pulsar el enlace contacto</p>
+    </section>
+    
+</body>
+</html>
