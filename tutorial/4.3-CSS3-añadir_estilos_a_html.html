@@ -1,0 +1,101 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        h4{
+            color: green;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3: Añadir estilos a html</title>
+</head>
+<body>
+    
+    <h1>CSS3: Añadir estilos a html</h1>
+
+    <p>
+        Hay varias formas:
+    </p>
+
+    <hr />
+
+    <h2>Manera inline</h2>
+
+    <p>
+        Consiste en añadir el atributo "style" en la etiqueta que se quiera cambiar el estilo.
+    </p>
+
+    <h3>Ejemplo:</h3>
+
+    <h3 style="color: red;">Texto en color rojo</h3>
+
+    <h3>Inconvenientes:</h3>
+
+    <p>
+        Si quisiera que todas las etiquetas h3 tuvieran el mismo estilo, tendría que cambiarlas una por una
+        para que ocurra. Esto no es muy óptimo ni recomendable.
+    </p>
+
+    <hr />
+
+    <h2>Etiqueta style</h2>
+
+    <p>
+        Se recomienda utilizar en la cabecera html (header)
+    </p>
+
+    <p>
+        De esta manera ahora en esta página, todos los h4 van a ser verdes
+    </p>
+
+    <h3>Ejemplos:</h3>
+
+    <h4>Texto en verde sin hacer nada</h4>
+    <h4>Otro texto en verde</h4>
+    <h4>Todos los h4 serán verdes</h4>
+
+    <h3>Inconvenientes:</h3>
+
+    <p>
+        Si mi página web es un conjunto de paginas, tendría que añadir la etiqueta style en el a todas
+        ellas.
+    </p>
+
+    <hr />
+
+    <h2>@import</h2>
+
+    <p>
+        Se trata de añadir en la etiqueta style del header: @import 'css/import.css', es decir, localizar
+        la ruta del archivo css que queremos aplicar.
+    </p>
+
+    <h3>Inconvenientes:</h3>
+
+    <p>
+        El problema está en la manera en que los navegadores entienden el @import. Hay algunos que no descargan
+        los elementos de la página web hasta que no se ha descargado la hoja de estilos y esto no es muy recomendable
+        si esta hoja fuera muy extensa con lo que dejaría la web sin contenido por mucho tiempo.
+    </p>
+
+    <hr />
+
+    <h2>Etiqueta link (RECOMENDABLE)</h2>
+
+    <p>
+        La que todos los autores recomiendan. Vamos a ver ahora sus atributos:
+    </p>
+
+    <p>
+        <ul>
+            <li>href: indicamos la ruta de la hoja de estilos que queremos importar (Ej: 'css/estilos.css')</li>
+            <li>rel: indicamos que tipo de contenido queremos enlazar (En nuestro caso 'stylesheet')</li>
+            <li>type: decimos que se trata de un texto css ('text/css')</li>
+        </ul>
+    </p>
+
+</body>
+</html>
