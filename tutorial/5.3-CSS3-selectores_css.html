@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3: Selectores css</title>
+</head>
+<body>
+
+    <h1>CSS3: Selectores css</h1>
+
+    <p>
+        Los selectores son reglas o patrones que me van a permitir seleccionar distintos elementos de
+        mi página web para cambiar sus propiedades o estilos visuales.
+    </p>
+
+    <h2>Formato de ficheros html</h2>
+
+    <ul style="list-style-type: none;">
+        <li>selector{
+            <ul style="list-style-type: none;">
+                <li>prop1: valor1;</li>
+                <li>prop2: valor2;</li>
+                <li>...</li>
+                <li>propn: valorn;</li>
+            </ul>
+        </li>
+        <li>}</li>
+    </ul>
+
+    <h3>Selectores más importantes</h3>
+
+    <ul>
+        <li>* (selector universal, selecciona todas las etiqeutas de la página web)</li>
+        <li>#id (solo elementos que tengan como id lo que yo ponga tras el #)</li>
+        <li>.class (solo etiqeutas que tengan de clase lo que yo ponga tras el .)</li>
+        <li>etiqueta (esa etiqueta)</li>
+        <li>selector1, selector2 (Se cambian a los elementos seleccionados por cada selector)</li>
+        <li>
+            selector1 selector2 (Cambia el aspecto de los elementos que cumplan con el selector2 
+            que estén dentro de aquellos que cumplan con el selector1)
+        </li>
+        <li>
+            selector1>selector2 (Cambia el aspecto de los elementos que cumplan con el selector2 y que sean hijos
+            directos del selector1)
+        </li>
+        <li>selector1+selector2 (Cambio los de selector2 que están justo después de los de selector1)</li>
+        <li>selector1~selector2 (Cambio los de selector2 que están justo antes de los de selector1)</li>
+        <li>
+            [atributo expr valor] (Cambio aquellos cuya expr cumpla con el valor)
+            <ul>
+                <li>Expr (=,~=,|=,$=,*...)</li>
+            </ul>
+        </li>
+        <li>Y cualquier combinación de todos los anteriores</li>
+    </ul>
+
+    <h2>Concepto de Cascada en CSS</h2>
+
+    <p>Cascada siginifica dos cosas:</p>
+
+    <ul>
+        <li>
+            Los estilos se van propagando hacia abajo. Por ejemplo: si tengo table con fondo verde, todas las celdas o td/th van a estar en verde
+        </li>
+        <li>
+            Si hay una regla que se puede aplicar al mismo elemento y hay conflicto, se aplica lo más específico. Por ejemplo: Si tengo table en verde pero especifico un td/th como amarillo, se aplica el amarillo
+
+        </li>
+    </ul>
+    
+</body>
+</html>
