@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3: Prefijos específicos para navegadores</title>
+</head>
+<body>
+
+    <h1>CSS3: Prefijos específicos para navegadores</h1>
+
+    <p>
+        Son propiedades experimentales en los navegadores y a los que se les ha añadido un prefijo para indicar 
+        que se les ha dado soporte antes de que sean soportadas por todos los demás.
+    </p>
+
+    <h3>Formato (Ejemplo):</h3>
+
+    <ul style="list-style-type: none;">
+        <li>
+            a{
+            <ul style="list-style-type: none;">
+                <li>-webkit-transition: -webkit-transform 1s;</li>
+                <li>transition: -ms-transform 1s;</li>
+                <li>transition: transform 1s</li>
+            </ul>
+        </li>
+        <li>}</li>
+    </ul>
+
+    <h4>Valores comunes:</h4>
+
+    <p>
+        La idea es, además de añadir la propiedad que queremos modificar, añadir los prefijos.
+    </p>
+
+    <ul>
+        <li>-webkit- (Chrome, Safari, nuevas versiones de Opera y todos los navegadores para iOS (Firefox tb))</li>
+        <li>-moz- (Firefox)</li>
+        <li>-o- (Antiguas versiones de Opera)</li>
+        <li>-ms- (Internet Explorer y Microsoft Edge)</li>
+    </ul>
+    
+    <h2>Cuando usarlos:</h2>
+
+    <p>
+        Es bastante dificil saber cuando usar estos prefijos así que tenemos dos maneras de saber cuando 
+        usarlos:
+    </p>
+
+    <ul>
+        <li><a href="http://shouldiprefix.com/">Página que nos dice según el elemento css que estemos añadiendo,
+        si debemos ponerlo o no</a></li>
+        <li><a href="https://github.com/postcss/autoprefixer">Herramienta que nos pone automáticamente los prefijos si necesitamos añadirlos</a></li>
+    </ul>
+
+</body>
+</html>

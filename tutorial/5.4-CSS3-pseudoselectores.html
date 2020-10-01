@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3: Pseudoselectores</title>
+</head>
+<body>
+
+    <h1>CSS3: Pseudoselectores</h1>
+
+    <p>
+        palabras claves que se añaden a los selectores que ya teníamos y que me permiten indicar en qué
+        estado se encuentra una etiqueta.
+    </p>
+
+    <h3>Sintaxis</h3>
+
+    <ul style="list-style-type: none;">
+        <li>
+            selector:pseudoselector{
+            <ul style="list-style-type: none;">
+                <li>prop1:valor1;</li>
+                <li>prop2:valor2;</li>
+                <li>....</li>
+                <li>propn:valorn</li>
+            </ul>        
+        </li>
+        <li>}</li>
+    </ul>
+
+    <p>De esta manera, se aplicarará el diseño al los selectores que cumplan con el pseudoselector</p>
+
+    <h2>Pseudoselectores de estado</h2>
+
+    <ul>
+        <li>:link (me va a indicar que un enlace no está visitado todavía)</li>
+        <li>:visited (me indica que el enlace se ha visitado ya)</li>
+        <li>:enable (me va a permitir seleccionar elementos HTML habilitados)</li>
+        <li>:disable (para los deshabilitados)</li>
+        <li>:checked (radio, checkbox, etc. Que yo haya seleccionado en un form)</li>
+        <li>:required (seleccionar elementos obligatorios de mi formulario)</li>
+        <li>:optional (elementos no obligatorios en el form)</li>
+        <li>:focus (seleccionar el elemento del formulario donde yo tengo el cursor)</li>
+        <li>:hover (seleccionar aquellos elementos sobre los que está el ratón)</li>
+        <li>:empty (si estuviera vacío)</li>
+        <li>...</li>
+    </ul>
+
+    <h2>Pseudoselectores de posición</h2>
+    <ul style="list-style-type: circle;">
+        <li>:first (primera ocurrencia del selector)</li>
+        <li>:first-child (los elementos que ha seleccionado el selector que a su vez son el primer hijo del arbol)</li>
+        <li>:first-of-type (la primera ocurrencia de ese tipo que ha seleccionado el selector)</li>
+        <li>:last (última ocurrencia del selector)</li>
+        <li>:last-child (los elementos que ha seleccionado el selector que a su vez son el último hijo del arbol)</li>
+        <li>:last-of-type (la última ocurrencia de ese tipo que ha seleccionado el selector)</li>
+        <li>:nth-child(n) (mismo pero con hijo n)</li>
+        <li>:nth-last-child (enésimo último hijo)</li>
+        <li>:nth-last-of-type() (enésimo último de su tipo)</li>
+    </ul>
+    
+    <hr>
+
+    <h1>CSS3: Pseudoelementos</h1>
+
+    <p>
+        Son palabras clave que se añaden a los selectores y que nos indican una parte de un elemento 
+        y nos permiten añadir contenido
+    </p>
+
+    <h3>Sintaxis</h3>
+
+    <ul style="list-style-type: none;">
+        <li>
+            selector::pseudoelemento{
+            <ul style="list-style-type: none;">
+                <li>prop1::valor1;</li>
+                <li>prop2::valor2;</li>
+                <li>....</li>
+                <li>propn::valorn;</li>
+            </ul>
+        </li>
+        <li>}</li>
+    </ul>
+
+    <h3>Algunos ejemplos:</h3>
+
+    <ul>
+        <li>::first-line (seleccionar la primera línea)</li>
+        <li>::first-letter (seleccionar la primera letra)</li>
+        <li>::after (seleccionar elementos que están despues)</li>
+        <li>::before (seleccionar elementos que están después)</li>
+        <li>::selected (seleccionar elementos que han sido seleccionados)</li>
+        <li>....</li>
+    </ul>
+
+</body>
+</html>

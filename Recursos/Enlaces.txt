@@ -2,3 +2,21 @@ Para consulta:
 - https://www.w3schools.com/
 - https://developer.mozilla.org/es/docs/Web/HTML
 - https://developer.mozilla.org/es/docs/Web/CSS
+
+Hojas de reseto css:
+- https://meyerweb.com/eric/tools/css/reset/
+- https://cssreset.com/scripts/html5-doctor-css-reset-stylesheet/
+
+Prefijos específicos de navegadores:
+- http://shouldiprefix.com/
+- https://github.com/postcss/autoprefixer
+
+Para optimizar tu CSS:
+- http://www.cssminifier.com/ (Minimizar al máximo el espacio que ocupa mi archivo css)
+- http://www.cssportal.com/css-optimize/ (Ver y quitar reglas reduntantes)
+- http://unused-css.com/ (Le pasaremos nuestra página y nos dirá si hay reglas que no se están utilizando)
+
+Preprocesadores css (Programas que permiten generar css haciendo que la estructura sea más legible y fácil de mantener):
+- less
+- Sass
+- PostCSS (Me permite desde javascript hacer operaciones con css y además es muy extensible)
