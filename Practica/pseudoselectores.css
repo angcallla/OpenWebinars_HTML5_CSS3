@@ -1,0 +1,46 @@
+*{
+    font-size: 1.1em;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td,th{
+    border: 1px solid black;
+}
+
+caption:first-of-type{
+    color: red;
+    text-transform: uppercase;
+}
+
+tr:first-of-type>th::first-letter{
+    font-size: 1.6em;
+}
+
+td:first-child{
+    background-color: green;
+}
+
+tbody tr:nth-child(3) th:nth-child(2){
+    background-color: yellow;
+}
+
+td:hover:last-child, th:hover:last-child{
+    font-size: 1.3em;
+}
+
+label::after{
+    color: red;
+    content: "*";
+}
+
+input:first-of-type{
+    border-color: red;
+}
+
+input:first-of-type::placeholder{
+    font-size: 0.65em;
+    text-align: center;
+}
